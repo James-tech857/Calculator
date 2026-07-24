@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+<!-- </script>  -->
+  <title>calculator</title>
+</head>
+<body class="bg-gray-50  bg-[url('./black-yellow.jpg')] bg-cover bg-no-repeat flex flex-col items-center justify-center min-h-screen p-4">
+
+  <div class="w-full max-w-[600px] max-h-full bg-black/50 p-6 rounded-2xl shadow-xl border border-gray-100">
+
+    <input type="text" placeholder="0" id="input" class="w-full  p-4 mb-4 text-right text-2xl bg-red-100 border border-gray-300 rounded-xl outline-none">
+        
+      <div class="grid grid-cols-4 gap-3">
+        <button class="calculateNumber p-4 bg-red-300 hover:bg-red-200 font-bold rounded-xl transition-all cursor-pointer">1</button>
+        <button class="calculateNumber p-4 bg-red-300 hover:bg-red-200 font-bold rounded-xl transition-all cursor-pointer">2</button>
+        <button class="calculateNumber p-4 bg-red-300 hover:bg-red-200 font-bold rounded-xl transition-all cursor-pointer">3</button>
+        <button class="calculateNumber p-4 bg-red-300 hover:bg-red-200 font-bold rounded-xl transition-all cursor-pointer">4</button>
+        <button class="calculateNumber p-4 bg-red-300 hover:bg-red-200 font-bold rounded-xl transition-all cursor-pointer">5</button>
+        <button class="calculateNumber p-4 bg-red-300 hover:bg-red-200 font-bold rounded-xl transition-all cursor-pointer">6</button>
+        <button class="calculateNumber p-4 bg-red-300 hover:bg-red-200 font-bold rounded-xl transition-all cursor-pointer">7</button>
+        <button class="calculateNumber p-4 bg-red-300 hover:bg-red-200 font-bold rounded-xl transition-all cursor-pointer">8</button>
+        <button class="calculateNumber p-4 bg-red-300 hover:bg-red-200 font-bold rounded-xl transition-all cursor-pointer">9</button>
+      </div>
+      <div class="grid grid-cols-4 gap-3 mt-2">
+        <button class="calculateNumber p-4 bg-blue-300 hover:bg-blue-200 font-bold rounded-xl transition-all cursor-pointer">0</button>
+        <button id="plusNumber" class="p-4 bg-blue-300 hover:bg-blue-200 font-bold rounded-xl transition-all cursor-pointer">+</button>
+        <button id="minusNumber" class="p-4 bg-blue-300 hover:bg-blue-200 font-bold rounded-xl transition-all cursor-pointer">-</button>
+        <button id="multiNumber" class="p-4 bg-blue-300 hover:bg-blue-200 font-bold rounded-xl transition-all cursor-pointer">*</button>
+        <button id="divisionNumber" class="p-4 bg-blue-300 hover:bg-blue-200 font-bold rounded-xl transition-all cursor-pointer">/</button>
+        <button id="decimal" class="p-4 bg-blue-300 hover:bg-blue-200 font-bold rounded-xl transition-all cursor-pointer">.</button>
+        <button id="sumNumber" class="p-4 bg-blue-300 hover:bg-blue-200 font-bold rounded-xl transition-all cursor-pointer">=</button>
+        <button id="removeAll" class="p-4 bg-blue-300 hover:bg-blue-200 font-bold rounded-xl transition-all cursor-pointer">clear</button>
+      </div>
+      <div class="grid grid-cols-4 gap-3 mt-2">
+        <button id="squareRoot" class="p-4 bg-red-200 hover:bg-red-100 font-bold rounded-xl transition-all cursor-pointer">sqr</button>
+        <button id="percentage" class="p-4 bg-red-200 hover:bg-red-100 font-bold rounded-xl transition-all cursor-pointer">%</button>
+      </div>
+  </div>
+  <script src="calculate.js"></script>
+</body>
+</html>
