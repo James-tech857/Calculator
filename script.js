@@ -11,7 +11,6 @@ const squareRoot=document.getElementById('squareRoot');
 const percentage=document.getElementById('percentage');
 
 function inputDisplay(){
-// }
 calculateNum.forEach(nums=> {
   nums.addEventListener('click',()=>{
   inputField.value+=(nums.textContent);
