@@ -14,7 +14,9 @@ function inputDisplay(){
 // }
 calculateNum.forEach(nums=> {
   nums.addEventListener('click',()=>{
-    inputField.value+=(nums.textContent);
+  inputField.value+=(nums.textContent);
+
+  inputField.scrollLeft = inputField.scrollWidth;
   })  
     })
   };
