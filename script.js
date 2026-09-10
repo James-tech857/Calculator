@@ -11,8 +11,14 @@ const squareRoot=document.getElementById('squareRoot');
 const percentage=document.getElementById('percentage');
 
 function inputDisplay(){
+  // if(inputField.value==="Error"){
+  //   return;
+  // }
 calculateNum.forEach(nums=> {
   nums.addEventListener('click',()=>{
+    if(inputField.value==="Error"){
+    return;
+  }
   inputField.value+=(nums.textContent);
 
   inputField.scrollLeft = inputField.scrollWidth;
